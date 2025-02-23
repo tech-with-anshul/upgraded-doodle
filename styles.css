@@ -1,0 +1,118 @@
+/* Background with a gradient and animated effect */
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: white;
+    margin: 0;
+    padding: 20px;
+    animation: backgroundFade 10s infinite alternate;
+}
+
+/* Main container */
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.15); /* Glassmorphism Effect */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+/* Title */
+h1 {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/* Logo */
+.logo {
+    width: 250px;
+    height: 250px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 50%;
+    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.3);
+    transition: transform 0.3s;
+}
+
+/* Search bar container */
+.search-container {
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.3);
+    transition: transform 0.3s;
+}
+
+/* Search input */
+#search {
+    width: 90%;
+    padding: 12px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    outline: none;
+}
+
+#search:focus {
+    transform: scale(1.05);
+}
+
+/* Certificate list */
+#certificate-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Certificate container */
+.certificate {
+    width: 230px;
+    margin: 15px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.certificate:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(255, 255, 255, 0.2);
+}
+
+/* Certificate image */
+.certificate img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Download button */
+.download-btn {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.download-btn:hover {
+    background: #218838;
+    transform: scale(1.1);
+}
+
+/* Background animation */
+@keyframes backgroundFade {
+    0% { background: linear-gradient(to right, #0f2027, #203a43, #2c5364); }
+    100% { background: linear-gradient(to right, #16222A, #3A6073, #4F4F4F); }
+}
